@@ -1,0 +1,11 @@
+dist/*
+build/*
+.cache
+public
+node_modules
+*.esm.js
+prettier.config.js
+next.config.js
+postcss.config.js
+tailwind.config.ts
+lint-staged.config.js

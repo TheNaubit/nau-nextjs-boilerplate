@@ -1,0 +1,33 @@
+{
+  /**
+     ----- Linting configurations
+   */
+  // Prevent editor formatting on save for certain file types
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  // Configure eslint to report + fix errors for correct file types
+  "editor.formatOnPaste": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
+    }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "editor.wordWrap": "on",
+  "editor.linkedEditing": true
+}

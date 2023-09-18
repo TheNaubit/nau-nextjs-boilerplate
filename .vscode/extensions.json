@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "fractalbrew.backticks",
+    "dbaeumer.vscode-eslint",
+    "codeandstuff.package-json-upgrade",
+    "esbenp.prettier-vscode"
+  ]
+}
