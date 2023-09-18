@@ -18,6 +18,7 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache"
   },
   "dependencies": {
+    "@total-typescript/ts-reset": "0.5.1",
     "class-variance-authority": "0.7.0",
     "clsx": "2.0.0",
     "framer-motion": "^10.16.4",
@@ -26,11 +27,11 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwind-merge": "1.14.0",
-    "tailwindcss-animate": "1.0.7",
-    "@total-typescript/ts-reset": "0.5.1"
+    "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
     "@antfu/ni": "0.21.8",
+    "@commitlint/config-conventional": "^17.7.0",
     "@ianvs/prettier-plugin-sort-imports": "4.1.0",
     "@types/node": "20.6.2",
     "@types/react": "18.2.21",
@@ -38,6 +39,7 @@
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "6.7.0",
     "autoprefixer": "10.4.15",
+    "commitlint": "^17.7.1",
     "eslint": "8.49.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "13.4.19",
@@ -55,5 +57,8 @@
     "prettier": "3.0.3",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
+  },
+  "commitlint": {
+    "extends": "@commitlint/config-conventional"
   }
 }
