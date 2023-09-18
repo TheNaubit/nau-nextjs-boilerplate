@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎉 Nau's Next.js Boilerplate
 
-## Getting Started
+This is a small Next.js 13 boilerplate that I like to use in my projects. It doesn't come with any UI framework/kit/whatever to allow you to setup whatever you prefer to use on each project (although it already comes with Tailwind ready to use, just in case).
 
-First, run the development server:
+## What are its features?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- It uses AppRouter
+- Tailwind preconfigured
+- Next Themes provider preconfigured
+- E2E testing ready (with Playwright)
+- Prettier and ESLint preconfigured
+- Hooks for commits created and configured (including one to make sure the commit messages follow the standard commit style)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Dependencies used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+(Feel free to remove any you don't want/need)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next Themes (to simplify handling themes in your UI)
+- Tailwind (to style your web or integrate a UI framework that uses it)
+- Framer Motion (for beautiful animations)
+- Playwright (for E2E testing)
+- TS Reset (for improving some Typescript werid stuff)
+- @antfu/ni (so you can run `ni`, `nr` and `nlx` instead of thinking the right command in your package manager to install, run or execute)
+- Lint-staged (so linting is done only to staged files)
+- Husky (for the hooks!)
+- Commitlint (to enforce the right commit messages style)
+- Several ESLint plugins (improve accessibility in JSX, better coding style in React and also in React hooks, better security and so on...)
 
-## Learn More
+## How to install?
 
-To learn more about Next.js, take a look at the following resources:
+(I recommend to use `pnpm` as the package manager, but feel free to use any you want)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Run `pnpm i` to install the dependencies
+2. Run `pnpm run dev` or `nr dev` to run the project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can use `ni` instead of `pnpm i`, `nr` instead of `pnpm run` and `nlx` instead of `pnpx`.
