@@ -16,7 +16,8 @@
     "typecheck": "tsc --noEmit",
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
-    "commitlint:check": "commitlint --edit"
+    "commitlint:check": "commitlint --edit",
+    "lintstaged:check": "lint-staged"
   },
   "dependencies": {
     "@total-typescript/ts-reset": "0.5.1",
