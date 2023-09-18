@@ -1,20 +1,19 @@
 import Link from "next/link"
 
-import { siteConfig } from "@/config/site"
-
-export default function IndexPage() {
+export default function TestPage() {
   return (
     <main className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="flex max-w-[980px] flex-col items-start gap-2">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          {siteConfig.name}
+          Test succeed!
         </h1>
         <p className="text-muted-foreground max-w-[700px] text-lg">
-          {siteConfig.description}
+          Glad it worked. If you are reached this point manually, try by running{" "}
+          <code>nr test:e2e</code>.
         </p>
         <ul>
           <li>
-            <Link href="/test">Go to the test page</Link>
+            <Link href="/">Go back to the home page</Link>
           </li>
         </ul>
       </div>
