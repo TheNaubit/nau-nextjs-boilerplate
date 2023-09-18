@@ -28,6 +28,8 @@ This is a small Next.js 13 boilerplate that I like to use in my projects. It doe
 
 ## How to install?
 
+It requires Node 20 or higher (although that is not a hard requirement, feel free to change the pinned version to whatever you need but at least Node 16).
+
 (I recommend to use `pnpm` as the package manager, but feel free to use any you want)
 
 1. Run `pnpm i` to install the dependencies
